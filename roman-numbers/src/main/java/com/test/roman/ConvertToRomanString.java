@@ -33,6 +33,7 @@ public class ConvertToRomanString implements RomanConversions {
 	 * @return roman symbol string 
 	 */
 	public String convertToRoman(int input) {
+		long startTime = System.currentTimeMillis();
 		
 		List<Numeral> romans = Utils.buildRomanList(); 
 		
@@ -64,6 +65,7 @@ public class ConvertToRomanString implements RomanConversions {
 			ctr++;
 		}
 		
+		System.out.println(String.format("Took %d ms for input %d", (System.currentTimeMillis() - startTime), input));
 		return roman.toString();
 	}
 	
