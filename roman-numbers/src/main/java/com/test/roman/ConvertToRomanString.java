@@ -26,7 +26,7 @@ import com.test.roman.utils.Utils;
  * TODO: use modulus instead of subtraction to massively reduce looping 
  */
 
-public class ConvertToRomanString implements ConvertToRoman {
+public class ConvertToRomanString implements RomanConversions {
 
 	/**
 	 * @param number to convert to roman
